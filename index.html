@@ -1,10 +1,17 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>祝琳生日快乐</title>
 <link rel="icon" href="./srkl.ico">
 <style>
+	#myButton {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      font-size: 20px;
+    }
 /* basic styles for black background and crosshair cursor */
 body {
 	background: #000;
@@ -22,9 +29,9 @@ canvas {
 
 <audio id="myAudio" autoplay>
   <source src="格格-生日祝福歌.mp3" type="audio/mp3">
-  Your browser does not support the audio tag.
+
 </audio>
- <button onclick="togglePlay()">播放/暂停</button>
+ <button id="myButton" onclick="togglePlay()">播放/暂停</button>
  <script>
   var audio = document.getElementById("myAudio");
    function togglePlay() {
